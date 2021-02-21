@@ -5,9 +5,8 @@
 }
 
 .features-list-item {
+  @include size($w: 370px, $h: 404px);
   margin: 15px;
-  width: 370px;
-  height: 404px;
 }
 
 .features-list-link {
@@ -26,11 +25,8 @@
 }
 
 .features-list-title {
-  width: 322px;
-  height: 36px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
+  @include size($w: 322px, $h: 36px);
+  @include font($fw: 700, $fs: 18px, $lh: 36px);
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 
@@ -38,12 +34,8 @@
 }
 
 .features-list-subtitle {
-  width: 322px;
-  height: 30px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-
+  @include size($w: 322px, $h: 30px);
+  @include font($fw: 400, $fs: 16px, $lh: 30px);
   letter-spacing: 0.03em;
 
   color: var(--subtitle-color);
@@ -64,13 +56,10 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 101%;
+  @include size($w: 100%, $h: 101%);
   padding: 63px 24px;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  @include font($fw: 400, $fs: 18px, $lh: 28px);
   letter-spacing: 0.03em;
   transform: translateY(100%);
 

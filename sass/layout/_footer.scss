@@ -10,17 +10,8 @@
 }
 
 .foo-link {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-
+  @include size($w: 145px, $h: 31px);
+  @include font($fw: 700, $fs: 26px, $lh: 31px);
   letter-spacing: 0.03em;
 
   color: var(--white-color);
@@ -31,9 +22,7 @@
 }
 
 .footer-list-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  @include font($lh: 24px);
   letter-spacing: 0.03em;
   margin-bottom: 6px;
 }
@@ -50,15 +39,13 @@
 
 .footer-link-mail,
 .footer-link-tel {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
 
 .footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
+  @include font($fw: 700, $fs: 14px, $lh: 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -72,8 +59,7 @@
 }
 
 .footer-ikon {
-  width: 20px;
-  height: 20px;
+  @include size($w: 20px, $h: 20px);
   fill: var(--white-color);
   transition: fill 250ms var(--transition-cubic);
 
@@ -84,16 +70,12 @@
 }
 
 .footer-item-social {
-  width: 44px;
-  height: 44px;
+  @include size($w: 44px, $h: 44px);
 }
 
 .footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+  @include flex(flex, center, center);
+  @include size($w: 44px, $h: 44px);
   border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.1);
@@ -117,7 +99,6 @@
 }
 
 .footer-social {
-  width: 206px;
-  height: 80px;
+  @include size($w: 206px, $h: 80px);
   margin-right: 93px;
 }

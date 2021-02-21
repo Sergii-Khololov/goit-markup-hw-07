@@ -90,13 +90,10 @@ body {
   color: var(--accent-color);
 }
 
-.social-list-link .social-list-ikon {
-  fill: #afb1b8;
-}
-
 .social-list-ikon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
   transition: fill 250ms var(--transition-cubic);
 }
 
@@ -272,7 +269,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -280,11 +276,9 @@ body {
 }
 
 .logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 1.192px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -308,7 +302,7 @@ body {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   border: 0;
@@ -329,9 +323,9 @@ body {
 }
 
 .features-list-item {
-  margin: 15px;
   width: 370px;
   height: 404px;
+  margin: 15px;
 }
 
 .features-list-link {
@@ -351,7 +345,7 @@ body {
   height: 36px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--text-color);
@@ -362,7 +356,7 @@ body {
   height: 30px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
 }
@@ -387,7 +381,7 @@ body {
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.556;
   letter-spacing: 0.03em;
   transform: translateY(100%);
   color: var(--white-color);
@@ -414,13 +408,9 @@ body {
 .foo-link {
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 2157px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -432,7 +422,7 @@ body {
 .footer-list-item {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   margin-bottom: 6px;
 }
@@ -448,7 +438,7 @@ body {
 
 .footer-link-mail,
 .footer-link-tel {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -573,8 +563,8 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   cursor: pointer;
   color: var(--white-color);

@@ -16,8 +16,6 @@
   margin-bottom: 50px;
 }
 
-.work-item {
-  .work-item:not(:last-child) {
-    margin-right: 30px;
-  }
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }

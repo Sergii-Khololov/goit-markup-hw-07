@@ -37,9 +37,7 @@
 }
 
 .team-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  @include font($fw: 500, $fs: 16px, $lh: 19px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -47,9 +45,7 @@
 }
 
 .team-profession {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.03em;

@@ -1,6 +1,5 @@
 .footer-form {
-  width: 570px;
-  height: 86px;
+  @include size($w: 570px, $h: 86px);
 }
 
 .footer-form-container {
@@ -9,9 +8,7 @@
 }
 
 .footer-form-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
+  @include font($fw: 700, $fs: 14px, $lh: 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -20,8 +17,7 @@
 }
 
 .footer-form-input {
-  width: 358px;
-  height: 50px;
+  @include size($w: 358px, $h: 50px);
   margin-right: 12px;
   padding-left: 16px;
 
@@ -34,12 +30,8 @@
   transition: border-color 250ms var(--transition-cubic);
 
   &::placeholder {
-    width: 47px;
-    height: 20px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include size($w: 47px, $h: 20px);
+    @include font($fw: 400, $fs: 16px, $lh: 20px);
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
@@ -54,15 +46,11 @@
   min-width: 200px;
   height: 50px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  @include font($fw: 700, $fs: 16px, $lh: 30px);
   letter-spacing: 0.06em;
   border-radius: 4px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
   text-align: center;
   cursor: pointer;
 
@@ -79,8 +67,7 @@
 }
 
 .footer-form-ikon {
-  width: 24px;
-  height: 24px;
+  @include size($w: 24px, $h: 24px);
   margin-left: 10px;
 
   fill: currentColor;

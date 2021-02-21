@@ -16,19 +16,16 @@
 }
 
 .rectangle {
-  width: 270px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include size($w: 270px, $h: 120px);
+  @include flex(flex, center, center);
+
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
 .feature-item-ikon {
-  width: 70px;
-  height: 70px;
+  @include size($w: 70px, $h: 70px);
 }
 
 .feature-title {
@@ -41,11 +38,8 @@
 }
 
 .feature-text {
-  width: 270px;
-  height: 75px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  @include size($w: 270px, $h: 75px);
+  @include font($fw: 400, $fs: 14px, $lh: 24px);
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
 }

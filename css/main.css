@@ -90,13 +90,10 @@ body {
   color: var(--accent-color);
 }
 
-.social-list-link .social-list-ikon {
-  fill: #afb1b8;
-}
-
 .social-list-ikon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
   transition: fill 250ms var(--transition-cubic);
 }
 
@@ -272,7 +269,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -280,11 +276,9 @@ body {
 }
 
 .logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 1.192px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -305,7 +299,7 @@ body {
 .hero-subject {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
@@ -316,7 +310,7 @@ body {
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
   min-width: 200px;
@@ -378,9 +372,9 @@ body {
 .feature-text {
   width: 270px;
   height: 75px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
 }
@@ -402,7 +396,7 @@ body {
   margin-bottom: 50px;
 }
 
-.work-item .work-item:not(:last-child) {
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -444,7 +438,7 @@ body {
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -452,9 +446,7 @@ body {
 }
 
 .team-profession {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -472,7 +464,7 @@ body {
   height: 42px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -511,15 +503,12 @@ body {
 
 .clients-ikon {
   transition: fill 250ms var(--transition-cubic);
+  fill: #afb1b8;
 }
 
 .clients-link:hover .clients-ikon,
 .clients-link:focus .clients-ikon {
   fill: var(--accent-color);
-}
-
-.clients-link .clients-ikon {
-  fill: #afb1b8;
 }
 
 .footer {
@@ -536,13 +525,9 @@ body {
 .foo-link {
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 2157px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -554,7 +539,7 @@ body {
 .footer-list-item {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   margin-bottom: 6px;
 }
@@ -570,7 +555,7 @@ body {
 
 .footer-link-mail,
 .footer-link-tel {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -707,7 +692,7 @@ body {
   padding-bottom: 27px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -720,7 +705,7 @@ body {
   height: 23px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -792,8 +777,8 @@ body {
 
 .modal-form-label-policy {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   min-width: 400px;
   height: 24px;
   font-weight: 400;
@@ -935,8 +920,8 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   cursor: pointer;
   color: var(--white-color);

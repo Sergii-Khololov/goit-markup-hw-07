@@ -2,8 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  @include size($w: 100%, $h: 100%);
   background: rgba(0, 0, 0, 0.2);
   transition: all 250ms var(--transition-cubic);
   opacity: 1;
@@ -14,8 +13,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  @include size($w: 528px, $h: 581px);
   padding: 40px;
 
   background-color: var(--white-color);
@@ -28,12 +26,9 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
+  @include size($w: 30px, $h: 30px);
 
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   cursor: pointer;
 
@@ -45,15 +40,12 @@
 }
 
 .close-btn {
-  width: 18px;
-  height: 18px;
-
+  @include size($w: 18px, $h: 18px);
   .modal-close-btn:hover &,
   .modal-close-btn:focus & {
     fill: var(--accent-color);
   }
 }
-
 
 .is-hidden {
   opacity: 0;
@@ -72,9 +64,7 @@
   padding-top: 27px;
   padding-bottom: 27px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  @include font($fw: 700, $fs: 14px, $lh: 16px);
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -84,12 +74,8 @@
 }
 
 .modal-text {
-  width: 448px;
-  height: 23px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  @include size($w: 448px, $h: 23px);
+  @include font($fw: 700, $fs: 20px, $lh: 23px);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -104,8 +90,7 @@
 
 .modal-form-input {
   display: block;
-  width: 100%;
-  height: 40px;
+  @include size($w: 100%, $h: 40px);
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -118,12 +103,10 @@
   }
 }
 
-
 .modal-form-input-wrapper {
   position: relative;
   display: block;
 }
-
 
 .modal-form-icon {
   position: absolute;
@@ -131,8 +114,8 @@
   left: 15px;
   transform: translateY(-50%);
   display: block;
-  width: 18px;
-  height: 18px;
+  @include size($w: 18px, $h: 18px);
+
   transition: fill 250ms var(--transition-cubic);
 
   .modal-form-input:focus + & {
@@ -140,14 +123,12 @@
   }
 }
 
-
 .modal-form-message {
   display: block;
   font-size: 14px;
   line-height: 1.123;
   letter-spacing: 0.01em;
-  width: 100%;
-  height: 120px;
+  @include size($w: 100%, $h: 120px);
   padding: 12px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -166,18 +147,12 @@
   }
 }
 
-
 .modal-form-label-policy {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  @include flex(flex, space-between, center);
   min-width: 400px;
   height: 24px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  @include font($fw: 400, $fs: 14px, $lh: 24px);
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 
@@ -186,8 +161,7 @@
   &::before {
     content: "";
     display: inline-block;
-    width: 16px;
-    height: 15px;
+    @include size($w: 16px, $h: 15px);
     margin-right: 9px;
 
     outline: 2px solid var(--text-color);
@@ -207,7 +181,6 @@
   }
 }
 
-
 .modal-label-link {
   color: var(--subtitle-color);
   transition: color 250ms var(--transition-cubic);
@@ -223,10 +196,7 @@
   height: 50px;
   padding: 10px 55px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-
+  @include font($fw: 700, $fs: 16px, $lh: 30px);
   align-self: center;
   align-items: center;
   text-align: center;
@@ -243,15 +213,13 @@
     background-color 250ms var(--transition-cubic),
     box-shadow 250ms var(--transition-cubic);
 
-    &:hover,
-    &:focus {
-  color: var(--white-color);
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
-
-
 
 .modal-form-input-label {
   margin-bottom: 10px;
@@ -259,9 +227,7 @@
 
 .modal-form-text {
   display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
+  @include font($fw: 400, $fs: 12px, $lh: 14px);
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 
