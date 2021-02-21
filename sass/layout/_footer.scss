@@ -1,0 +1,123 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 252px;
+}
+
+.footer-link-mail {
+  margin-bottom: 9px;
+}
+
+.foo-link {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+}
+
+.footer-map {
+  color: var(--white-color);
+}
+
+.footer-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+}
+
+.footer-link {
+  color: var(--contact-color);
+  transition: color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-link-mail,
+.footer-link-tel {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-ikon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+  transition: fill 250ms var(--transition-cubic);
+
+  .footer-social-link:hover &,
+  .footer-social-link:focus & {
+    fill: var(--white-color);
+  }
+}
+
+.footer-item-social {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--transition-cubic),
+    color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+}
+
+.footer-list-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  margin-right: 70px;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+  margin-right: 93px;
+}
