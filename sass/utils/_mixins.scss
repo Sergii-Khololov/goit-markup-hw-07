@@ -38,6 +38,12 @@
 
 //  @include font($fw: 400, $fs: 14px, $lh: 18px);
 
+@mixin style($ff) {
+  font-family: $ff;
+}
+
+// @include style ($ff);
+
 @mixin flex($dis: flex, $js: center, $ai: center) {
   display: $dis;
   justify-content: $js;

@@ -13,7 +13,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: var(--white-color);
+  color: var(--basic-color);
 }
 
 .footer-form-input {
@@ -26,7 +26,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: transparent;
-  color: var(--white-color);
+  color: var(--basic-color);
   transition: border-color 250ms var(--transition-cubic);
 
   &::placeholder {
@@ -38,7 +38,7 @@
   }
 
   &:focus {
-    border-color: var(--white-color);
+    border-color: var(--basic-color);
   }
 }
 
@@ -49,19 +49,20 @@
   @include font($fw: 700, $fs: 16px, $lh: 30px);
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: 0;
 
   @include flex(flex, center, center);
   text-align: center;
   cursor: pointer;
 
-  color: var(--white-color);
+  color: var(--basic-color);
   background: var(--accent-color);
 
   transition: box-shadow 250ms var(--transition-cubic);
 
   &:hover,
   &:focus {
-    border: 1px solid var(--white-color);
+    border: 1px solid var(--basic-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }

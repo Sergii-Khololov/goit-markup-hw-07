@@ -14,11 +14,11 @@
   @include font($fw: 700, $fs: 26px, $lh: 31px);
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--basic-color);
 }
 
 .footer-map {
-  color: var(--white-color);
+  color: var(--basic-color);
 }
 
 .footer-list-item {
@@ -50,7 +50,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: var(--white-color);
+  color: var(--basic-color);
 }
 
 .footer-contacts {
@@ -60,12 +60,12 @@
 
 .footer-ikon {
   @include size($w: 20px, $h: 20px);
-  fill: var(--white-color);
+  fill: var(--basic-color);
   transition: fill 250ms var(--transition-cubic);
 
   .footer-social-link:hover &,
   .footer-social-link:focus & {
-    fill: var(--white-color);
+    fill: var(--basic-color);
   }
 }
 
@@ -85,7 +85,7 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
-    color: var(--white-color);
+    color: var(--basic-color);
   }
 }
 

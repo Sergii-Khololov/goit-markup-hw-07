@@ -1,5 +1,5 @@
 .header {
-  background: var(--white-color);
+  background: var(--basic-color);
 }
 
 .page-header {
@@ -179,6 +179,7 @@
 }
 
 .logo {
+  @include style(Raleway);
   @include font($fw: 700, $fs: 26px, $lh: 31px);
   letter-spacing: 0.03em;
   color: var(--accent-color);

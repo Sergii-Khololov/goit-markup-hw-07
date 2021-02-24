@@ -12,7 +12,7 @@
 .features-list-link {
   display: inline-block;
 
-  background: var(--white-color);
+  background: var(--basic-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   transition: box-shadow 250ms var(--transition-cubic);
@@ -57,13 +57,13 @@
   left: 0;
   top: 0;
   @include size($w: 100%, $h: 101%);
+  @include font($fw: 400, $fs: 18px, $lh: 28px);
   padding: 63px 24px;
 
-  @include font($fw: 400, $fs: 18px, $lh: 28px);
   letter-spacing: 0.03em;
   transform: translateY(100%);
 
-  color: var(--white-color);
+  color: var(--basic-color);
   background: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms var(--transition-cubic);
