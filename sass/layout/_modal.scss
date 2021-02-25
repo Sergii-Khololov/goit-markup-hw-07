@@ -61,8 +61,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
+  @include flex(flex, center, center);
 
   @include font($fw: 700, $fs: 14px, $lh: 16px);
   text-align: center;
