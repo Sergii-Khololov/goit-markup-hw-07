@@ -58,10 +58,27 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* COMPONENTS */
@@ -284,28 +301,17 @@ body {
   color: var(--accent-color);
 }
 
-.hero {
-  width: 1600px;
-  height: 600px;
-  text-align: center;
-  background: #c4c4c4;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-}
-
 .hero-subject {
+  width: 360px;
+  height: 84px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 42px;
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--basic-color);
-  margin-bottom: 40px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-btn {
@@ -316,6 +322,8 @@ body {
   cursor: pointer;
   min-width: 200px;
   padding: 8px 30px;
+  display: flex;
+  margin: auto;
   color: var(--basic-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
